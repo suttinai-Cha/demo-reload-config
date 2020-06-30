@@ -1,0 +1,10 @@
+server:
+  port: 8090
+spring:
+  config:
+    location: file:../external-config/demo-config.properties,file:../external-config/demo-config-2.properties
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "refresh"
